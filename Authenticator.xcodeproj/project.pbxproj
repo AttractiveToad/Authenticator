@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB3D41D62788E4B500620063 /* AuthenticatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D41D52788E4B500620063 /* AuthenticatorApp.swift */; };
-		BB3D41D82788E4B600620063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D41D72788E4B600620063 /* ContentView.swift */; };
 		BB3D41DA2788E4B700620063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3D41D92788E4B700620063 /* Assets.xcassets */; };
 		BB3D41DD2788E4B700620063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3D41DC2788E4B700620063 /* Preview Assets.xcassets */; };
+		BB3D42082788FD4F00620063 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D41FE2788FD4F00620063 /* LoginView.swift */; };
+		BB3D42092788FD4F00620063 /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D41FF2788FD4F00620063 /* CredentialsLoginView.swift */; };
+		BB3D420A2788FD4F00620063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D42002788FD4F00620063 /* ContentView.swift */; };
+		BB3D420C2788FD4F00620063 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D42042788FD4F00620063 /* Title.swift */; };
+		BB3D420D2788FD4F00620063 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D42052788FD4F00620063 /* PrimaryButton.swift */; };
+		BB3D420E2788FD4F00620063 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D42062788FD4F00620063 /* AuthenticationManager.swift */; };
+		BB3D420F2788FD4F00620063 /* AuthenticatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D42072788FD4F00620063 /* AuthenticatorApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB3D41D22788E4B500620063 /* Authenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB3D41D52788E4B500620063 /* AuthenticatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorApp.swift; sourceTree = "<group>"; };
-		BB3D41D72788E4B600620063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB3D41D92788E4B700620063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB3D41DC2788E4B700620063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB3D41FE2788FD4F00620063 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BB3D41FF2788FD4F00620063 /* CredentialsLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
+		BB3D42002788FD4F00620063 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB3D42042788FD4F00620063 /* Title.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		BB3D42052788FD4F00620063 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		BB3D42062788FD4F00620063 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		BB3D42072788FD4F00620063 /* AuthenticatorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatorApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		BB3D41D42788E4B500620063 /* Authenticator */ = {
 			isa = PBXGroup;
 			children = (
-				BB3D41D52788E4B500620063 /* AuthenticatorApp.swift */,
-				BB3D41D72788E4B600620063 /* ContentView.swift */,
+				BB3D42072788FD4F00620063 /* AuthenticatorApp.swift */,
+				BB3D42062788FD4F00620063 /* AuthenticationManager.swift */,
+				BB3D41FD2788FD4F00620063 /* Views */,
+				BB3D42032788FD4F00620063 /* Components */,
 				BB3D41D92788E4B700620063 /* Assets.xcassets */,
 				BB3D41DB2788E4B700620063 /* Preview Content */,
 			);
@@ -65,6 +77,25 @@
 				BB3D41DC2788E4B700620063 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB3D41FD2788FD4F00620063 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB3D41FE2788FD4F00620063 /* LoginView.swift */,
+				BB3D41FF2788FD4F00620063 /* CredentialsLoginView.swift */,
+				BB3D42002788FD4F00620063 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB3D42032788FD4F00620063 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB3D42042788FD4F00620063 /* Title.swift */,
+				BB3D42052788FD4F00620063 /* PrimaryButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +130,7 @@
 				TargetAttributes = {
 					BB3D41D12788E4B500620063 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -137,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB3D41D82788E4B600620063 /* ContentView.swift in Sources */,
-				BB3D41D62788E4B500620063 /* AuthenticatorApp.swift in Sources */,
+				BB3D420C2788FD4F00620063 /* Title.swift in Sources */,
+				BB3D42082788FD4F00620063 /* LoginView.swift in Sources */,
+				BB3D420D2788FD4F00620063 /* PrimaryButton.swift in Sources */,
+				BB3D420E2788FD4F00620063 /* AuthenticationManager.swift in Sources */,
+				BB3D42092788FD4F00620063 /* CredentialsLoginView.swift in Sources */,
+				BB3D420A2788FD4F00620063 /* ContentView.swift in Sources */,
+				BB3D420F2788FD4F00620063 /* AuthenticatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +303,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Authenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = 98TZ7588JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,9 +321,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.zimmisserver.Authenticator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zimmisserver.Authenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,12 +335,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Authenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = 98TZ7588JF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.zimmisserver.Authenticator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zimmisserver.Authenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

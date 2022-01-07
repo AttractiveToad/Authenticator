@@ -1,8 +1,8 @@
 //
-//  AuthenticatorApp.swift
+//  AuthenticatorDemoApp.swift
 //  Authenticator
 //
-//  Created by Alois Zimmermann on 07.01.22.
+//  Created by Alois Zimmermann on 2022-01-08.
 //
 
 import SwiftUI

@@ -63,7 +63,7 @@ class AuthenticationManager: ObservableObject {
     
     // Dummy function to sign in to the app - typically, you'd use a real authentication system like Sign in with Apple, Sign in with Google, Firebase Auth, or any other authentication service
     func authenticateWithCredentials(username: String, password: String) {
-        if username.lowercased() == "stephanie" && password == "123456" {
+        if username.lowercased() == "zimmi" && password == "admin" {
             isAuthenticated = true
         } else {
             errorDescription = "Wrong credentials"
